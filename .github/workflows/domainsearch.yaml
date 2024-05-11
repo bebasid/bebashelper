@@ -50,7 +50,6 @@ jobs:
           cat hosts-hasilsorted
       - name: Release hosts
         run: |
-          echo "" >> hosts_generated
           issue_number=${{ github.event.issue.number }}
           echo -e "\n\n#$issue_number" >> hosts_generated
           cat hosts-hasilsorted | sudo tee -a hosts_generated > /dev/null
