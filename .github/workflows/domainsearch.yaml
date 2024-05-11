@@ -1,0 +1,63 @@
+name: Domain Search
+on:
+  issues:
+    types:
+      - labeled
+jobs:
+  domain_search:
+    if: github.event.label.name == 'request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Close Issue
+        uses: peter-evans/close-issue@v3
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          comment: Terima kasih atas kontribusi Anda, permintaan penambahan domain Anda akan segera diterapkan.
+      - name: Extract Domains from Issue
+        run: |
+          domains=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH" | tr '\n' ' ')
+          echo "$domains" > domains.txt
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl unzip wget jq
+          curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip
+          unzip findomain-linux.zip
+          chmod +x findomain
+          sudo mv findomain /usr/bin/findomain
+          wget https://raw.githubusercontent.com/bebasid/bebasid/master/dev/scripts/scan.py
+          echo "INSTALLATION DONE - ALL SET"
+      - name: Run Findomain
+        run: |
+          domain=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH" | sed -n '3p')
+          findomain -f domains.txt -u hasilunsorted
+      - name: Sort Subdomains
+        run: |
+          python - <<EOF
+          with open('hasilunsorted', 'r') as file:
+              lines = [line.rstrip() for line in file.readlines()]
+          sorted_lines = sorted(lines, key=len)
+          sorted_content = "\n".join(sorted_lines)
+          with open('hasilsorted', 'w') as file:
+              file.write(sorted_content)
+          EOF
+      - name: Run Scan
+        run: |
+          python scan.py hasilsorted
+          echo
+          echo "Result Lists:"
+          cat hosts-hasilsorted
+      - name: Release hosts
+        run: |
+          issue_number=${{ github.event.issue.number }}
+          sed -i "s/$/ ${{ github.event.issue.number }}/" hosts_generated
+          cat hosts-hasilsorted | sudo tee -a hosts_generated > /dev/null
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add hosts_generated
+          git commit -m "Update domains list" || echo "No changes to commit"
+          git push
