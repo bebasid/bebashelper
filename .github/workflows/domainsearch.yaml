@@ -17,7 +17,7 @@ jobs:
           comment: Terima kasih atas kontribusi Anda, permintaan penambahan domain Anda akan segera diterapkan.
       - name: Extract Domains from Issue
         run: |
-          domains=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH" | tr '\\n' '\n' | sed 's/^\ *//')
+          domains=$(jq -r '.issue.body | trim' "$GITHUB_EVENT_PATH" | tr '\n' '\n')
           echo "$domains" > domains
           cat domains
       - name: Install Dependencies
