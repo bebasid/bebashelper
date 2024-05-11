@@ -445,3 +445,226 @@ issue_number=1
 185.255.122.14 mail.watchkobestreams.info
 185.255.122.14 www.watchkobestreams.info
 185.255.122.14 watchkobestreams.info
+
+#1
+
+
+# [crichd.tv]
+104.21.235.76 fc8.crichd.tv
+104.21.235.75 fc2.crichd.tv
+104.21.235.76 pc7.crichd.tv
+104.21.235.75 one.crichd.tv
+104.21.235.75 web.crichd.tv
+104.21.235.76 v8.crichd.tv
+104.21.235.75 v5.crichd.tv
+104.21.235.76 fc.crichd.tv
+104.21.235.76 b5.crichd.tv
+104.21.235.75 b6.crichd.tv
+104.21.235.75 b3.crichd.tv
+104.21.235.76 v4.crichd.tv
+104.21.235.76 m4.crichd.tv
+104.21.235.75 cf.crichd.tv
+104.21.235.75 fx.crichd.tv
+104.21.235.75 v2.crichd.tv
+104.21.235.76 v6.crichd.tv
+104.21.235.75 fs.crichd.tv
+104.21.235.75 m2.crichd.tv
+104.21.235.76 b7.crichd.tv
+104.21.235.76 nv.crichd.tv
+104.21.235.75 mh.crichd.tv
+104.21.235.76 mc.crichd.tv
+104.21.235.76 v3.crichd.tv
+104.21.235.75 me.crichd.tv
+104.21.235.75 jx.crichd.tv
+104.21.235.76 m7.crichd.tv
+104.21.235.75 b8.crichd.tv
+104.21.235.75 en.crichd.tv
+104.21.235.75 x.crichd.tv
+104.21.235.75 m.crichd.tv
+104.21.235.76 1.crichd.tv
+104.21.235.75 e.crichd.tv
+104.21.235.75 a.crichd.tv
+104.21.235.75 w.crichd.tv
+104.21.235.75 p.crichd.tv
+104.21.235.75 c.crichd.tv
+104.21.235.75 h.crichd.tv
+104.21.235.76 s.crichd.tv
+104.21.235.75 k.crichd.tv
+104.21.235.76 b.crichd.tv
+104.21.235.76 crichd.tv
+
+# [vipbox.lc]
+45.178.4.170 www.vipbox.lc
+45.178.6.101 el.vipbox.lc
+45.178.4.170 ar.vipbox.lc
+45.178.4.170 fr.vipbox.lc
+45.178.4.170 pt.vipbox.lc
+45.178.4.170 it.vipbox.lc
+45.178.7.138 de.vipbox.lc
+45.178.6.101 ja.vipbox.lc
+45.178.6.101 nl.vipbox.lc
+45.178.6.101 es.vipbox.lc
+45.178.7.138 vipbox.lc
+
+# [viprow.nu]
+45.178.6.108 2fwww.viprow.nu
+45.178.5.132 ww17.viprow.nu
+45.178.6.108 wwww.viprow.nu
+45.178.6.149 ww6.viprow.nu
+45.178.5.132 www.viprow.nu
+45.178.6.108 ww1.viprow.nu
+45.178.6.108 dot.viprow.nu
+45.178.6.149 en.viprow.nu
+45.178.6.149 es.viprow.nu
+45.178.6.108 ar.viprow.nu
+45.178.5.132 it.viprow.nu
+45.178.6.149 fr.viprow.nu
+45.178.5.132 pt.viprow.nu
+45.178.6.108 nl.viprow.nu
+45.178.6.108 de.viprow.nu
+45.178.6.149 ja.viprow.nu
+45.178.5.132 viprow.nu
+
+# [1stream.eu]
+104.21.235.84 www.1stream.eu
+104.21.235.83 1stream.eu
+
+# [aesport.tv]
+45.11.56.8 primarysrv.aesport.tv
+38.104.169.186 download.aesport.tv
+172.67.212.46 dev-db.aesport.tv
+104.21.67.44 image.aesport.tv
+104.21.67.44 demo.aesport.tv
+172.67.212.46 dev.aesport.tv
+172.67.212.46 cms.aesport.tv
+172.67.212.46 www.aesport.tv
+172.64.80.1 aesport.tv
+
+# [sportshd.sx]
+109.205.187.139 www.sportshd.sx
+104.21.1.86 cfr.sportshd.sx
+109.205.187.139 sportshd.sx
+
+# [streamed.su]
+104.21.12.61 streamed.su
+
+# [footybite.cc]
+104.21.61.207 www1.footybite.cc
+104.21.61.207 www.footybite.cc
+104.21.61.207 footybite.cc
+
+# [strikeout.im]
+45.178.6.104 strikeout.im
+
+# [vipleague.im]
+45.178.6.110 www.vipleague.im
+45.178.6.110 fr.vipleague.im
+45.178.6.147 it.vipleague.im
+45.178.6.147 ja.vipleague.im
+45.178.5.131 es.vipleague.im
+45.178.5.131 pt.vipleague.im
+45.178.5.131 nl.vipleague.im
+45.178.6.110 ar.vipleague.im
+45.178.6.147 de.vipleague.im
+45.178.6.110 vipleague.im
+
+# [vipleague.la]
+45.178.6.102 www.vipleague.la
+45.178.6.102 nl.vipleague.la
+45.178.6.102 pt.vipleague.la
+45.178.4.171 ar.vipleague.la
+45.178.6.102 de.vipleague.la
+45.178.4.171 it.vipleague.la
+45.178.6.102 ja.vipleague.la
+45.178.6.102 fr.vipleague.la
+45.178.4.171 es.vipleague.la
+45.178.4.171 vipleague.la
+
+# [720pstream.nu]
+172.67.206.139 cdn.720pstream.nu
+45.178.6.172 720pstream.nu
+
+# [freesports.to]
+104.21.65.68 www.freesports.to
+172.67.159.8 freesports.to
+
+# [nhlstream.net]
+104.21.57.64 new.nhlstream.net
+104.21.57.64 old.nhlstream.net
+172.67.189.95 www.nhlstream.net
+104.21.57.64 nhlstream.net
+
+# [streameast.to]
+172.64.80.1 www.streameast.to
+104.21.34.181 v1.streameast.to
+104.21.34.181 v2.streameast.to
+104.21.34.181 streameast.to
+
+# [dudestream.com]
+104.21.3.185 www.dudestream.com
+172.67.131.23 dudestream.com
+
+# [rojadirecta.eu]
+104.21.39.239 www.blog.rojadirecta.eu
+172.67.150.145 channel.rojadirecta.eu
+104.21.39.239 blog.rojadirecta.eu
+172.67.150.145 www.rojadirecta.eu
+104.21.39.239 ita.rojadirecta.eu
+104.21.39.239 it.rojadirecta.eu
+172.67.150.145 gr.rojadirecta.eu
+172.67.150.145 ut.rojadirecta.eu
+172.67.150.145 es.rojadirecta.eu
+172.67.150.145 rojadirecta.eu
+
+# [motogpstream.me]
+45.178.5.206 www.motogpstream.me
+45.178.5.206 motogpstream.me
+
+# [p2pstreams.live]
+172.67.164.191 www.p2pstreams.live
+104.21.41.118 p2pstreams.live
+
+# [socceronline.me]
+45.178.6.106 www.socceronline.me
+45.178.5.205 socceronline.me
+
+# [totalsportek.to]
+104.21.31.18 worldcup.totalsportek.to
+104.21.31.18 watch.totalsportek.to
+104.21.31.18 live.totalsportek.to
+172.67.174.165 www.totalsportek.to
+172.67.174.165 totalsportek.to
+
+# [thehomesport.com]
+104.21.96.113 www.thehomesport.com
+104.21.96.113 thehomesport.com
+
+# [totalsportek.pro]
+104.21.25.25 www.totalsportek.pro
+104.21.25.25 totalsportek.pro
+
+# [worldstreams.net]
+172.67.133.99 www.worldstreams.net
+104.21.5.120 en.worldstreams.net
+172.67.133.99 worldstreams.net
+
+# [olympicstreams.me]
+45.178.7.139 www.olympicstreams.me
+45.178.7.139 olympicstreams.me
+
+# [firstsrowsports.tv]
+91.224.59.37 www.firstsrowsports.tv
+91.224.59.37 firstsrowsports.tv
+
+# [rakettvv.blogspot.com]
+172.253.122.132 rakettvv.blogspot.com
+
+# [watchkobestreams.info]
+185.255.122.14 cpcalendars.watchkobestreams.info
+185.255.122.14 cpcontacts.watchkobestreams.info
+185.255.122.14 webmail.watchkobestreams.info
+185.255.122.14 webdisk.watchkobestreams.info
+185.255.122.14 cpanel.watchkobestreams.info
+185.255.122.14 mail.watchkobestreams.info
+185.255.122.14 www.watchkobestreams.info
+185.255.122.14 watchkobestreams.info
