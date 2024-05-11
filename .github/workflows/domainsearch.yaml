@@ -17,8 +17,10 @@ jobs:
           comment: Terima kasih atas kontribusi Anda, permintaan penambahan domain Anda akan segera diterapkan.
       - name: Extract Domains from Issue
         run: |
-          domains=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH" | tr '\n' ' ')
-          echo "$domains" > domains.txt
+          issue_body=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH" | perl -pe 's/\\\([\\`\*_{}\\[\\]\\(\\)#\\+\\-!\\])/\\$1/g')
+          domains=$(echo "$issue_body" | grep -oP '(?:https?://)?(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]' | sort -u)
+          echo "$domains" > domains
+          cat domains
       - name: Install Dependencies
         run: |
           sudo apt-get update
@@ -31,8 +33,7 @@ jobs:
           echo "INSTALLATION DONE - ALL SET"
       - name: Run Findomain
         run: |
-          domain=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH" | sed -n '3p')
-          findomain -f domains.txt -u hasilunsorted
+          findomain -f domains -u hasilunsorted
       - name: Sort Subdomains
         run: |
           python - <<EOF
