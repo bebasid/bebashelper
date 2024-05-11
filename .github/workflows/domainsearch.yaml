@@ -52,7 +52,7 @@ jobs:
         run: |
           echo "" >> hosts_generated
           issue_number=${{ github.event.issue.number }}
-          echo "issue_number=$issue_number" >> hosts_generated
+          echo -e "\n\n#$issue_number" >> hosts_generated
           cat hosts-hasilsorted | sudo tee -a hosts_generated > /dev/null
       - name: Commit changes
         run: |
