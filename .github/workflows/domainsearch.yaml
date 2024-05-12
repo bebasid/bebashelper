@@ -51,7 +51,7 @@ jobs:
       - name: Release hosts
         run: |
           issue_number=${{ github.event.issue.number }}
-          echo -e "\n\n\n#$issue_number GENERATED" >> hosts_generated
+          echo -e "\n\n#$issue_number GENERATED" >> hosts_generated
           cat hosts-hasilsorted | sudo tee -a hosts_generated > /dev/null
       - name: Commit changes
         run: |
